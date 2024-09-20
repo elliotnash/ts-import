@@ -3,13 +3,17 @@
   "type": "module",
   "module": "src/index.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsup src/*.ts --dts-resolve --format esm --watch"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@repo/typescript-config": "workspace:*"
   },
   "peerDependencies": {
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "tsup": "^8.3.0"
   }
 }
