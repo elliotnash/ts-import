@@ -1,0 +1,19 @@
+{
+  "name": "@repo/app",
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/models": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
